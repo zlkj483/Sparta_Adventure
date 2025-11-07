@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float minXLook;
     public float maxXLook;
     private float camCurXRot;
+    private float camCurYRot;
     public float lookSensitivitiy;
     private Vector2 mouseDelta;
      
@@ -51,10 +52,14 @@ public class PlayerController : MonoBehaviour
 
     void CameraLook()
     {
-        camCurXRot += mouseDelta.y * lookSensitivitiy;
+        // x축 (위,아래)
+        camCurXRot -= mouseDelta.y * lookSensitivitiy;
         camCurXRot = Mathf.Clamp(camCurXRot, minXLook, maxXLook);
-        cameraContainer.localEulerAngles = new Vector3(-camCurXRot, 0, 0);
-        transform.eulerAngles = new Vector3(0, mouseDelta.x + lookSensitivitiy, 0);
+        cameraContainer.localEulerAngles = new Vector3(camCurXRot, 0, 0);
+
+        // y축(좌,우)
+        camCurYRot += mouseDelta.x * lookSensitivitiy;
+        transform.eulerAngles = new Vector3(0, camCurYRot, 0);
     }
     public void OnMove(InputAction.CallbackContext context)
     {
