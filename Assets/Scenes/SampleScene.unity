@@ -6197,6 +6197,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  jumpForce: 80
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 55
   cameraContainer: {fileID: 1846744266}
   minXLook: -85
   maxXLook: 85
@@ -6272,7 +6276,19 @@ MonoBehaviour:
     m_ActionId: 62e2aedb-2ee2-40d8-a17a-2560848809cf
     m_ActionName: Player/Look[/Mouse/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 522107754}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 87a50fb2-f727-46b7-a68f-d1c15a217ab2
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
@@ -16349,8 +16365,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.9842381, y: 1.0931228, z: 3.7994435}
-  m_Center: {x: -0.00023782253, y: 0.546954, z: -0.0014156704}
+  m_Size: {x: 2.9842381, y: 0.8, z: 3.7994435}
+  m_Center: {x: -0.00023782253, y: 0.4, z: -0.0014156704}
 --- !u!1001 &1288229032
 PrefabInstance:
   m_ObjectHideFlags: 0
