@@ -85,22 +85,25 @@ public class PlayerController : MonoBehaviour
     {
         if(context.phase == InputActionPhase.Started && IsGrounded())
         {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }
 
     bool IsGrounded()
     {
-        Ray[] rays = new Ray[4]
+        Vector3[] rays = new Vector3[4]
         {
-            new Ray(transform.position + (transform.forward * 0.2f) + (transform.up * 0.01f), Vector2.down),
-            new Ray(transform.position + (-transform.forward * 0.2f) + (transform.up * 0.01f), Vector2.down),
-            new Ray(transform.position + (transform.right * 0.2f) + (transform.up * 0.01f), Vector2.down),
-            new Ray(transform.position + (-transform.right * 0.2f) + (transform.up * 0.01f), Vector2.down)
+            transform.position + (transform.forward * 0.2f) + (transform.up * 0.1f),
+            transform.position + (-transform.forward * 0.2f) + (transform.up * 0.1f),
+            transform.position + (transform.right * 0.2f) + (transform.up * 0.1f),
+            transform.position + (-transform.right * 0.2f) + (transform.up * 0.1f)
         };
-        for(int i = 0; i < rays.Length; i++)
+        Vector3 dir = (Vector3.down + transform.forward * 0.15f).normalized;
+
+        for (int i = 0; i < rays.Length; i++)
         {
-            if (Physics.Raycast(rays[i], 0.1f, groundLayerMask))
+            
+            if (Physics.Raycast(rays[i], dir * 0.2f, groundLayerMask))
             {
                 return true;
             }
