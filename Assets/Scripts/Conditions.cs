@@ -5,36 +5,43 @@ using UnityEngine.UI;
 
 public class Conditions : MonoBehaviour
 {
-    public float curHp;
-    public float maxHp;
-    public float startHp;
+    public float curValue;
+    public float maxValue;
+    public float startValue;
     public float tickDamage;
     public Image uiBar;
     // Start is called before the first frame update
     void Start()
     {
-        curHp = startHp;
+        curValue = startValue;
+    }
+    void UpdateUI()
+    {
+        uiBar.fillAmount = GetPercentage();
     }
 
     // Update is called once per frame
     void Update()
     {
-        curHp -= Time.deltaTime;
-        uiBar.fillAmount = GetPercentage();
+        UpdateUI();
     }
 
     float GetPercentage()
     {
-        return curHp / maxHp;
+        return curValue / maxValue;
     }
 
-    public void Heal(float heal)
+    public void Add(float amount)
     {
-        curHp = Mathf.Min(curHp + heal, maxHp);
+        curValue = Mathf.Min(curValue + amount, maxValue);
+        UpdateUI(); 
+        Debug.Log($"{amount}만큼 회복함");
     }
 
-    public void Takedamage(float damage)
+    public void Subtract(float amount)
     {
-        curHp = Mathf.Max(curHp - damage, 0);
+       
+        curValue = Mathf.Max(curValue - amount, 0);
+        UpdateUI();
     }
 }

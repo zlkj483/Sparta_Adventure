@@ -9,7 +9,7 @@ public class CharacterManager : MonoBehaviour
         {
             if (_instance == null)
             {
-                _instance = new CharacterManager();
+                _instance = new GameObject("CharacerManager").AddComponent<CharacterManager>();
             }
             return _instance;
         }
@@ -20,6 +20,7 @@ public class CharacterManager : MonoBehaviour
         get { return _player; }
         set { _player = value; }
     }
+    public UIConditions UIConditions;
 
     private void Awake()
     {
@@ -30,9 +31,22 @@ public class CharacterManager : MonoBehaviour
 
         }
         else
-            if (_instance == this)
+            if (_instance != this)
         {
-            DontDestroyOnLoad(gameObject);
+            Destroy(gameObject);
+        }
+    }
+    private void Start()
+    {
+        UIConditions = FindObjectOfType<UIConditions>();
+        if(UIConditions != null && Player != null)
+        {
+            Player.conditions.uiCon = UIConditions;
+            Debug.Log("연결 성공");
+        }
+        else
+        {
+            Debug.LogError("연결실패");
         }
     }
 }
