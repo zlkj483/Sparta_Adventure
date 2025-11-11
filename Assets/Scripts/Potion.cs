@@ -8,6 +8,8 @@ public class Item : MonoBehaviour
     public float resTime = 20f;
     private Collider col;
     private MeshRenderer meshRen;
+    UIConditions uiCon;
+    Conditions hp { get { return uiCon.hp; } }
 
     // Start is called before the first frame update
     void Start()
@@ -25,12 +27,17 @@ public class Item : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Conditions playerCondition = other.GetComponent<Conditions>();
-            if (playerCondition != null)
+            PlayerConditions playerConditions = other.GetComponent<PlayerConditions>();
+            if (playerConditions != null)
             {
-                playerCondition.Add(healAmount);
+                playerConditions.Heal(healAmount);
+
+                StartCoroutine(ResTimeCoroutine());
             }
-            StartCoroutine(ResTimeCoroutine());
+            else
+            {
+                Debug.LogError("컴퍼넌트 로드 실패");
+            }
 
         }
     }

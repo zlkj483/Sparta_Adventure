@@ -32,4 +32,13 @@ public class PlayerConditions : MonoBehaviour
     {
         Debug.Log("Player Die");
     }
+
+    public void Heal(float amount)
+    {
+        if(hp != null)
+        {
+            hp.Add(amount);
+            Debug.Log($"{amount} 만큼 회복");
+        }
+    }
 }
