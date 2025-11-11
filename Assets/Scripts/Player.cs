@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
         Vector3 direction = mainCam.transform.forward;
         Vector3 boxExtent = new Vector3(0.7f, 0.7f, 0.7f);
         Quaternion orientation = mainCam.transform.rotation;
-        if (Physics.BoxCast(origin, boxExtent, direction, out rayHit, orientation, interDistance, itemLayer)) // BoxCast 실행: 상자(halfExtents)를 방향(direction)으로 쏘기
+        if (Physics.BoxCast(origin, boxExtent, direction, out rayHit, orientation, interDistance, itemLayer)) // BoxCast 실행: 상자(boxExtents)를 방향(direction)으로 쏘기
         {
             if(rayHit.collider.GetComponent<Item>() != null)
             {
