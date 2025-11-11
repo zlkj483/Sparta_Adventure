@@ -7261,7 +7261,7 @@ MonoBehaviour:
   jumpForce: 40
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 129
   cameraContainer: {fileID: 1846744266}
   minXLook: -85
   maxXLook: 85

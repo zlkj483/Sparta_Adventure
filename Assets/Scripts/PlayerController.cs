@@ -91,19 +91,20 @@ public class PlayerController : MonoBehaviour
 
     bool IsGrounded()
     {
-        Vector3[] rays = new Vector3[4]
+        //Vector3[] rays = new Vector3[4]
+        Ray[] rays = new Ray[4]
         {
-            transform.position + (transform.forward * 0.2f) + (transform.up * 0.1f),
-            transform.position + (-transform.forward * 0.2f) + (transform.up * 0.1f),
-            transform.position + (transform.right * 0.2f) + (transform.up * 0.1f),
-            transform.position + (-transform.right * 0.2f) + (transform.up * 0.1f)
+           new Ray(transform.position + (transform.forward * 0.2f) + (transform.up * 0.01f),Vector3.down),
+            new Ray(transform.position + (-transform.forward * 0.2f) + (transform.up * 0.01f), Vector3.down),
+            new Ray(transform.position + (transform.right * 0.2f) + (transform.up * 0.01f), Vector3.down),
+            new Ray(transform.position + (-transform.right * 0.2f) + (transform.up * 0.01f), Vector3.down)
         };
-        Vector3 dir = (Vector3.down + transform.forward * 0.15f).normalized;
+        //Vector3 dir = (Vector3.down + transform.forward * 0.15f).normalized;
 
         for (int i = 0; i < rays.Length; i++)
         {
             
-            if (Physics.Raycast(rays[i], dir * 0.2f, groundLayerMask))
+            if (Physics.Raycast(rays[i], 1.2f, groundLayerMask))
             {
                 return true;
             }
