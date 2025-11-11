@@ -10,7 +10,7 @@ public class PlayerConditions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -35,10 +35,9 @@ public class PlayerConditions : MonoBehaviour
 
     public void Heal(float amount)
     {
-        if(hp != null)
+        if (hp != null)
         {
             hp.Add(amount);
-            Debug.Log($"{amount} 만큼 회복");
         }
     }
 }

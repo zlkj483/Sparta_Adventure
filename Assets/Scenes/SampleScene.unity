@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Barrel_A_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5801577073088962814, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6294905732258787104, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -464,7 +468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9942059}
   - component: {fileID: 9942060}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 12692385}
   - component: {fileID: 12692386}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,6 +768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Rock_A_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 505459527202939238, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3376191799824277138, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.7
@@ -894,6 +902,10 @@ PrefabInstance:
     - target: {fileID: 2518882077137197274, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
       propertyPath: m_Name
       value: U_SmallHouse_B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2518882077137197274, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4603566428874885295, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
       propertyPath: m_RootOrder
@@ -1030,6 +1042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_SmallStone_A_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1099,6 +1115,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
   m_PrefabInstance: {fileID: 66807970}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &68191908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68191909}
+  - component: {fileID: 68191910}
+  m_Layer: 0
+  m_Name: PadCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68191909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68191908}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7023065, y: 0.4920882, z: -0.012032935, w: 0.51426655}
+  m_LocalPosition: {x: 1.3187066, y: 0.9141091, z: -2.3990493}
+  m_LocalScale: {x: 2.3277466, y: 2.7785368, z: 2.0625904}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1112199258}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &68191910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68191908}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &69992202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1469,6 +1538,10 @@ PrefabInstance:
     - target: {fileID: 7135288386728610016, guid: 86beed7462f870d4c92208156d74170f, type: 3}
       propertyPath: m_Name
       value: U_Stair_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135288386728610016, guid: 86beed7462f870d4c92208156d74170f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7602207623962697444, guid: 86beed7462f870d4c92208156d74170f, type: 3}
       propertyPath: m_RootOrder
@@ -2086,6 +2159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Box_A_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2151,6 +2228,10 @@ PrefabInstance:
     - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
       propertyPath: m_Name
       value: U_Box_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2220,6 +2301,10 @@ PrefabInstance:
     - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
       propertyPath: m_Name
       value: U_Window_A (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2449,6 +2534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2628,7 +2717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 202975472}
   - component: {fileID: 202975473}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2686,7 +2775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 213529944}
   - component: {fileID: 213529945}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3003,7 +3092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 237799752}
   - component: {fileID: 237799753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3481,6 +3570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Smoke_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4396790555719489198, guid: 91bb41f102e7df2468e790b7bbc794dc, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8617542010118860419, guid: 91bb41f102e7df2468e790b7bbc794dc, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3571,6 +3664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Barrel_A_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5801577073088962814, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6294905732258787104, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -3639,6 +3736,10 @@ PrefabInstance:
     - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_Name
       value: U_SmallStone_A_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
@@ -3899,7 +4000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 316091325}
   - component: {fileID: 316091326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4020,6 +4121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_SmallHouse_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2518882077137197274, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4603566428874885295, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4091,7 +4196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 343086265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stone Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4245,7 +4350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 348831276}
   - component: {fileID: 348831277}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4299,6 +4404,10 @@ PrefabInstance:
     - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_Name
       value: U_SmallStone_A_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
@@ -4380,6 +4489,10 @@ PrefabInstance:
     - target: {fileID: 3271364120293348622, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
       propertyPath: m_Name
       value: U_Wood_B_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271364120293348622, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7157429150893835574, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
       propertyPath: m_RootOrder
@@ -4526,7 +4639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 358992073}
   - component: {fileID: 358992074}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4624,6 +4737,10 @@ PrefabInstance:
     - target: {fileID: 5848389730213695227, guid: 2199112b791d28447bfdfe7bd6a3b3ed, type: 3}
       propertyPath: m_Name
       value: U_Tent_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848389730213695227, guid: 2199112b791d28447bfdfe7bd6a3b3ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4757,6 +4874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4780,7 +4901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376050563}
   - component: {fileID: 376050564}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5175,6 +5296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_SmallStone_A_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5326,6 +5451,10 @@ PrefabInstance:
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_Name
       value: burger_2_lod1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_TagString
@@ -6317,7 +6446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461262355}
   - component: {fileID: 461262356}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6416,6 +6545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Box_A_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6439,7 +6572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 483230687}
   - component: {fileID: 483230688}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6542,6 +6675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Stone_B_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3816424341392786239, guid: f0b000ca1d6b17148ab5d4e7ae06a9df, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6586,7 +6723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 490771633}
   - component: {fileID: 490771634}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6751,6 +6888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6857,7 +6998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508874420}
   - component: {fileID: 508874421}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7120,7 +7261,7 @@ MonoBehaviour:
   jumpForce: 40
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 128
   cameraContainer: {fileID: 1846744266}
   minXLook: -85
   maxXLook: 85
@@ -7139,6 +7280,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   conditions: {fileID: 0}
+  interDistance: 3
+  itemLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  potionInfoUI: {fileID: 896597966}
 --- !u!114 &522107756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7319,6 +7465,10 @@ PrefabInstance:
     - target: {fileID: 505459527202939238, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
       propertyPath: m_Name
       value: U_Rock_A_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 505459527202939238, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3376191799824277138, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
       propertyPath: m_RootOrder
@@ -7535,7 +7685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561592156}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmalHouse_Sets_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7729,7 +7879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 576733673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmalHouse_Sets_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7785,9 +7935,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1083305674}
     m_Modifications:
+    - target: {fileID: 3386862322009252541, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120628803722987823, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_Name
       value: U_Tree_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603705932889068148, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685207299990492877, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274141733495783819, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339334312195459357, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9210601751486177347, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_RootOrder
@@ -7851,13 +8029,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1083305674}
     m_Modifications:
+    - target: {fileID: 3386862322009252541, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120628803722987823, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_Name
       value: U_Tree_A_01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603705932889068148, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685207299990492877, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274141733495783819, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339334312195459357, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9210601751486177347, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_RootOrder
@@ -8083,7 +8289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 597861391}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain  Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8491,7 +8697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626653183}
   - component: {fileID: 626653184}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8929,7 +9135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 656111032}
   - component: {fileID: 656111033}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9066,6 +9272,10 @@ PrefabInstance:
     - target: {fileID: 1153022177928729057, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
       propertyPath: m_Name
       value: U_Window_B (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153022177928729057, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6763629751668856593, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
       propertyPath: m_RootOrder
@@ -9394,6 +9604,10 @@ PrefabInstance:
     - target: {fileID: 7412282186998020549, guid: 59227e91d0bf246469dc6920e8e19799, type: 3}
       propertyPath: m_Name
       value: U_Door_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412282186998020549, guid: 59227e91d0bf246469dc6920e8e19799, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9964,6 +10178,10 @@ PrefabInstance:
     - target: {fileID: 6269372500385815462, guid: e7e56ab5d8b79fe4db85883475afd6d8, type: 3}
       propertyPath: m_Name
       value: U_SmallHouse_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269372500385815462, guid: e7e56ab5d8b79fe4db85883475afd6d8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6618543820435041173, guid: e7e56ab5d8b79fe4db85883475afd6d8, type: 3}
       propertyPath: m_RootOrder
@@ -10779,6 +10997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Barrel_A_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5801577073088962814, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6294905732258787104, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -10980,6 +11202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Barrel_A_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5801577073088962814, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6294905732258787104, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -11180,7 +11406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 787883137}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Box  Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11261,6 +11487,10 @@ PrefabInstance:
     - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
       propertyPath: m_Name
       value: U_Box_A_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11553,6 +11783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11642,7 +11876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807830513}
   - component: {fileID: 807830514}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11761,7 +11995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827268210}
   - component: {fileID: 827268211}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11937,6 +12171,10 @@ PrefabInstance:
     - target: {fileID: 5768371717191585642, guid: 65e05b29ca383534c834c6e265c49c94, type: 3}
       propertyPath: m_Name
       value: U_Terrain_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768371717191585642, guid: 65e05b29ca383534c834c6e265c49c94, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12562,6 +12800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12631,7 +12873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 893445713}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rock  Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12658,6 +12900,140 @@ Transform:
   - {fileID: 530773023}
   m_Father: {fileID: 1103005720}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &896597966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 896597967}
+  - component: {fileID: 896597969}
+  - component: {fileID: 896597968}
+  m_Layer: 5
+  m_Name: PotionInfoUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &896597967
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896597966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1182839683}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 31, y: -32.178}
+  m_SizeDelta: {x: 544.6, y: 114.356}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &896597968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896597966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Burger. Current HP + 30
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &896597969
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896597966}
+  m_CullTransparentMesh: 1
 --- !u!1001 &902847988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12669,6 +13045,10 @@ PrefabInstance:
     - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_Name
       value: U_SmallStone_A_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
@@ -12878,6 +13258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13012,6 +13396,10 @@ PrefabInstance:
     - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
       propertyPath: m_Name
       value: U_Window_A (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13169,6 +13557,10 @@ PrefabInstance:
     - target: {fileID: 1529909059403225712, guid: bd1fd5d2504589a4c881645ad76e9e2f, type: 3}
       propertyPath: m_Name
       value: U_SmallHouse_D (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1529909059403225712, guid: bd1fd5d2504589a4c881645ad76e9e2f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8883480195267888019, guid: bd1fd5d2504589a4c881645ad76e9e2f, type: 3}
       propertyPath: m_RootOrder
@@ -13415,6 +13807,10 @@ PrefabInstance:
     - target: {fileID: 2518882077137197274, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
       propertyPath: m_Name
       value: U_SmallHouse_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2518882077137197274, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4603566428874885295, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
       propertyPath: m_RootOrder
@@ -13705,6 +14101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Rock_A_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 505459527202939238, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3376191799824277138, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13790,6 +14190,10 @@ PrefabInstance:
     - target: {fileID: 3271364120293348622, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
       propertyPath: m_Name
       value: U_Wood_B_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271364120293348622, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7157429150893835574, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
       propertyPath: m_RootOrder
@@ -14094,6 +14498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_B (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1153022177928729057, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6763629751668856593, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -14315,7 +14723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1028292296}
   - component: {fileID: 1028292297}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14558,6 +14966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Terrain_A_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768371717191585642, guid: 65e05b29ca383534c834c6e265c49c94, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14700,7 +15112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064774140}
   - component: {fileID: 1064774141}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14825,6 +15237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Box_A_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14912,6 +15328,10 @@ PrefabInstance:
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_Name
       value: burger_2_lod1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_TagString
@@ -15078,7 +15498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1083305674}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tree  Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15246,7 +15666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1090526622}
   - component: {fileID: 1090526623}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15300,6 +15720,10 @@ PrefabInstance:
     - target: {fileID: 1208434148693399934, guid: bcff92ba0f810fd459a0e2aa12741300, type: 3}
       propertyPath: m_Name
       value: U_Stone_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208434148693399934, guid: bcff92ba0f810fd459a0e2aa12741300, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2085874676015524923, guid: bcff92ba0f810fd459a0e2aa12741300, type: 3}
       propertyPath: m_RootOrder
@@ -15464,6 +15888,7 @@ Transform:
   - {fileID: 1083305674}
   - {fileID: 2008646702}
   - {fileID: 380177797}
+  - {fileID: 1890650346}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1104301461
@@ -15543,6 +15968,10 @@ PrefabInstance:
     - target: {fileID: 1529909059403225712, guid: bd1fd5d2504589a4c881645ad76e9e2f, type: 3}
       propertyPath: m_Name
       value: U_SmallHouse_D
+      objectReference: {fileID: 0}
+    - target: {fileID: 1529909059403225712, guid: bd1fd5d2504589a4c881645ad76e9e2f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8883480195267888019, guid: bd1fd5d2504589a4c881645ad76e9e2f, type: 3}
       propertyPath: m_RootOrder
@@ -15704,6 +16133,87 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3397656179314206091, guid: d5feaea726e337c48b0a6859c0931cba, type: 3}
   m_PrefabInstance: {fileID: 1109404376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1112199257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1890650346}
+    m_Modifications:
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.32172692
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.32172692
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.32172692
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.988
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.876
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.51426655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7023065
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4920882
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.012032935
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -45.276
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -131.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 88.922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240222, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_Name
+      value: TableFan_withParticles (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 68191909}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+--- !u!4 &1112199258 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+  m_PrefabInstance: {fileID: 1112199257}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1117983911
 PrefabInstance:
@@ -15889,6 +16399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Stone_B_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3816424341392786239, guid: f0b000ca1d6b17148ab5d4e7ae06a9df, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15978,6 +16492,10 @@ PrefabInstance:
     - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
       propertyPath: m_Name
       value: U_Window_A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16192,6 +16710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16370,6 +16892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Stone_A_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208434148693399934, guid: bcff92ba0f810fd459a0e2aa12741300, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2085874676015524923, guid: bcff92ba0f810fd459a0e2aa12741300, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -16546,6 +17072,10 @@ PrefabInstance:
     - target: {fileID: 3772036223314789755, guid: 5baf594775d35874daf89192f6aaa633, type: 3}
       propertyPath: m_Name
       value: U_Wood_A_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3772036223314789755, guid: 5baf594775d35874daf89192f6aaa633, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16811,6 +17341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Terrain_A_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768371717191585642, guid: 65e05b29ca383534c834c6e265c49c94, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17001,7 +17535,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -17019,6 +17553,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 520210592}
+  - {fileID: 896597967}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -17514,7 +18049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1239443371}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WoodBrige  Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17548,7 +18083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1242220952}
   - component: {fileID: 1242220953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17713,6 +18248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17757,7 +18296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257389990}
   - component: {fileID: 1257389991}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17903,6 +18442,10 @@ PrefabInstance:
     - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_Name
       value: U_SmallStone_A_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
@@ -18141,6 +18684,10 @@ PrefabInstance:
     - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
       propertyPath: m_Name
       value: U_Box_A_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18418,6 +18965,10 @@ PrefabInstance:
       value: burger_2_lod1 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_TagString
       value: Burger
       objectReference: {fileID: 0}
@@ -18681,6 +19232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18804,6 +19359,10 @@ PrefabInstance:
     - target: {fileID: 4396790555719489198, guid: 91bb41f102e7df2468e790b7bbc794dc, type: 3}
       propertyPath: m_Name
       value: U_Smoke_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396790555719489198, guid: 91bb41f102e7df2468e790b7bbc794dc, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8617542010118860419, guid: 91bb41f102e7df2468e790b7bbc794dc, type: 3}
       propertyPath: m_RootOrder
@@ -18939,6 +19498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Stone_B_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3816424341392786239, guid: f0b000ca1d6b17148ab5d4e7ae06a9df, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19028,6 +19591,10 @@ PrefabInstance:
     - target: {fileID: 7412282186998020549, guid: 59227e91d0bf246469dc6920e8e19799, type: 3}
       propertyPath: m_Name
       value: U_Door_A_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412282186998020549, guid: 59227e91d0bf246469dc6920e8e19799, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19270,6 +19837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Terrain_A_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768371717191585642, guid: 65e05b29ca383534c834c6e265c49c94, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19315,7 +19886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1384963106}
   - component: {fileID: 1384963107}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19590,6 +20161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_WoodGround_A_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1204746612076392680, guid: 36787de3efd723346a82286450eaeecc, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1204746612076392681, guid: 36787de3efd723346a82286450eaeecc, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -19702,6 +20277,10 @@ PrefabInstance:
     - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
       propertyPath: m_Name
       value: U_Window_A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19858,6 +20437,10 @@ PrefabInstance:
     - target: {fileID: 7396517098900753316, guid: a1dfff433afeac34f9f2ff61baa0f653, type: 3}
       propertyPath: m_Name
       value: U_WoodBrige_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396517098900753316, guid: a1dfff433afeac34f9f2ff61baa0f653, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20176,6 +20759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20221,6 +20808,10 @@ PrefabInstance:
     - target: {fileID: 5801577073088962814, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
       propertyPath: m_Name
       value: U_Barrel_A_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5801577073088962814, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6294905732258787104, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
       propertyPath: m_RootOrder
@@ -20386,9 +20977,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1083305674}
     m_Modifications:
+    - target: {fileID: 3386862322009252541, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120628803722987823, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_Name
       value: U_Tree_A_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603705932889068148, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685207299990492877, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274141733495783819, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339334312195459357, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9210601751486177347, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_RootOrder
@@ -20465,7 +21084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1458593843}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wood  Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20779,6 +21398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Smoke_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4396790555719489198, guid: 91bb41f102e7df2468e790b7bbc794dc, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8617542010118860419, guid: 91bb41f102e7df2468e790b7bbc794dc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -20926,6 +21549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Tent_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4390691899149317431, guid: 90890e6f3f21c2d49bf77df901185c61, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8244314409965158383, guid: 90890e6f3f21c2d49bf77df901185c61, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -20990,7 +21617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501389768}
   - component: {fileID: 1501389769}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21044,6 +21671,10 @@ PrefabInstance:
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_Name
       value: burger_2_lod1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_TagString
@@ -21256,6 +21887,10 @@ PrefabInstance:
     - target: {fileID: 7412282186998020549, guid: 59227e91d0bf246469dc6920e8e19799, type: 3}
       propertyPath: m_Name
       value: U_Door_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412282186998020549, guid: 59227e91d0bf246469dc6920e8e19799, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22341,6 +22976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Wood_B_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3271364120293348622, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7157429150893835574, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -22631,6 +23270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Terrain_A_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5768371717191585642, guid: 65e05b29ca383534c834c6e265c49c94, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22808,7 +23451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1604182234}
   - component: {fileID: 1604182235}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22954,6 +23597,10 @@ PrefabInstance:
     - target: {fileID: 7135288386728610016, guid: 86beed7462f870d4c92208156d74170f, type: 3}
       propertyPath: m_Name
       value: U_Stair_A_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135288386728610016, guid: 86beed7462f870d4c92208156d74170f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7602207623962697444, guid: 86beed7462f870d4c92208156d74170f, type: 3}
       propertyPath: m_RootOrder
@@ -23123,6 +23770,10 @@ PrefabInstance:
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_Name
       value: burger_2_lod1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_TagString
@@ -23309,6 +23960,10 @@ PrefabInstance:
     - target: {fileID: 7447092938384941201, guid: 5e986766fce0a62438e865bb9a2f178d, type: 3}
       propertyPath: m_Name
       value: U_WoodBrige_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447092938384941201, guid: 5e986766fce0a62438e865bb9a2f178d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23557,6 +24212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Stone_B_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3816424341392786239, guid: f0b000ca1d6b17148ab5d4e7ae06a9df, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23581,6 +24240,10 @@ PrefabInstance:
     - target: {fileID: 505459527202939238, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
       propertyPath: m_Name
       value: U_Rock_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 505459527202939238, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3376191799824277138, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
       propertyPath: m_RootOrder
@@ -23854,6 +24517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1153022177928729057, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6763629751668856593, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -24056,6 +24723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24098,9 +24769,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1083305674}
     m_Modifications:
+    - target: {fileID: 3386862322009252541, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120628803722987823, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_Name
       value: U_Tree_A_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185318902545647468, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603705932889068148, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685207299990492877, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274141733495783819, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339334312195459357, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9210601751486177347, guid: a615e373d0e6c8a49a0d0189e099dea6, type: 3}
       propertyPath: m_RootOrder
@@ -24166,7 +24865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1688413864}
   - component: {fileID: 1688413865}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24220,6 +24919,10 @@ PrefabInstance:
     - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_Name
       value: U_SmallStone_A_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
@@ -24299,7 +25002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689409249}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: House Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24379,6 +25082,10 @@ PrefabInstance:
     - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
       propertyPath: m_Name
       value: U_Window_A (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24517,6 +25224,10 @@ PrefabInstance:
     - target: {fileID: 3271364120293348622, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
       propertyPath: m_Name
       value: U_Wood_B_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271364120293348622, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7157429150893835574, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
       propertyPath: m_RootOrder
@@ -24795,7 +25506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1721095621}
   - component: {fileID: 1721095622}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24915,6 +25626,10 @@ PrefabInstance:
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_Name
       value: burger_2_lod1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_TagString
@@ -25136,6 +25851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_SmallStone_A_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -25282,6 +26001,10 @@ PrefabInstance:
     - target: {fileID: 1153022177928729057, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
       propertyPath: m_Name
       value: U_Window_B (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153022177928729057, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6763629751668856593, guid: a5c6b33f03f1a154d9830c1c5f708e3f, type: 3}
       propertyPath: m_RootOrder
@@ -25462,7 +26185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1791515159}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmalHouse_Sets_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25615,6 +26338,10 @@ PrefabInstance:
     - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_Name
       value: U_SmallStone_A_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
@@ -25906,6 +26633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26052,6 +26783,10 @@ PrefabInstance:
     - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
       propertyPath: m_Name
       value: U_Box_A_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26273,6 +27008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_SmallStone_A_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -26473,6 +27212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Wood_B_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3271364120293348622, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7157429150893835574, guid: a855bc055f2ff9f4c8ab55a40dc26110, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -26574,6 +27317,10 @@ PrefabInstance:
     - target: {fileID: 5801577073088962814, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
       propertyPath: m_Name
       value: U_Barrel_A_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5801577073088962814, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6294905732258787104, guid: 65296ff2ea0fabf4d80ffc04c245ef43, type: 3}
       propertyPath: m_RootOrder
@@ -26758,6 +27505,10 @@ PrefabInstance:
       value: burger_2_lod1
       objectReference: {fileID: 0}
     - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 689590982467746587, guid: 5c4fcba3347757b48ada7a92abd23aad, type: 3}
       propertyPath: m_TagString
       value: Burger
       objectReference: {fileID: 0}
@@ -26923,7 +27674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1885477654}
   - component: {fileID: 1885477655}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27110,6 +27861,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7746814959185472368, guid: 881bece305470c247994addc0bc24033, type: 3}
   m_PrefabInstance: {fileID: 1890504271}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1890650345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890650346}
+  m_Layer: 0
+  m_Name: JumpPad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1890650346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890650345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8282529713360890116}
+  - {fileID: 1112199258}
+  m_Father: {fileID: 1103005720}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1891444403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27259,6 +28043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_SmallHouse_C (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 60171140888180242, guid: d2fd50467af4b8b4f958f112ff0c1e9e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5450671090174004332, guid: d2fd50467af4b8b4f958f112ff0c1e9e, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -27374,6 +28162,10 @@ PrefabInstance:
     - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_Name
       value: U_SmallStone_A_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
@@ -27521,6 +28313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Box_A_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7601520992879714186, guid: fdb56f27288e9f54aae369d90aaff967, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27568,6 +28364,10 @@ PrefabInstance:
     - target: {fileID: 2518882077137197274, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
       propertyPath: m_Name
       value: U_SmallHouse_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2518882077137197274, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4603566428874885295, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
       propertyPath: m_RootOrder
@@ -28161,6 +28961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Window_A (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8073086445439096664, guid: f50353c5a95db3441a954a4a1a47c97c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28317,6 +29121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_Tent_B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5848389730213695227, guid: 2199112b791d28447bfdfe7bd6a3b3ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28468,7 +29276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2014531783}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stair01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28730,6 +29538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_SmallHouse_B (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2518882077137197274, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4603566428874885295, guid: 12964e7d1567e844c9df883e524d8fb8, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -28818,7 +29630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2027679249}
   - component: {fileID: 2027679250}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: StairCollider (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28872,6 +29684,10 @@ PrefabInstance:
     - target: {fileID: 505459527202939238, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
       propertyPath: m_Name
       value: U_Rock_A_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 505459527202939238, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3376191799824277138, guid: 88dad63b74404d341a3283682f2c07ef, type: 3}
       propertyPath: m_RootOrder
@@ -29488,6 +30304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: U_SmallHouse_D (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1529909059403225712, guid: bd1fd5d2504589a4c881645ad76e9e2f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8883480195267888019, guid: bd1fd5d2504589a4c881645ad76e9e2f, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -29575,7 +30395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2080512681}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stair02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29983,6 +30803,10 @@ PrefabInstance:
     - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_Name
       value: U_SmallStone_A_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332302556842774783, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6331860414298616599, guid: dfa3993133b9a934d80e02c4fba783cd, type: 3}
       propertyPath: m_RootOrder
@@ -30694,6 +31518,72 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7746814959185472368, guid: 881bece305470c247994addc0bc24033, type: 3}
   m_PrefabInstance: {fileID: 2138911141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8282529713360890115
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1890650346}
+    m_Modifications:
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -27.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.51426655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7023065
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4920882
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.012032935
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -45.276
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -131.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 88.922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240222, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_Name
+      value: TableFan_withParticles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+--- !u!4 &8282529713360890116 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+  m_PrefabInstance: {fileID: 8282529713360890115}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
