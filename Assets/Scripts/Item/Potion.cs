@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Potion", menuName = "New Item/Potion")]
 public class Potion : MonoBehaviour
 {
     public float healAmount = 30f;
@@ -9,20 +10,15 @@ public class Potion : MonoBehaviour
     private Collider col;
     private MeshRenderer meshRen;
     UIConditions uiCon;
-    Conditions hp { get { return uiCon.hp; } }
+    Conditions Hp { get { return uiCon.hp; } }
 
-    // Start is called before the first frame update
     void Start()
     {
         col = GetComponent<Collider>();
         meshRen = GetComponent<MeshRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

@@ -5,13 +5,7 @@ using UnityEngine;
 public class PlayerConditions : MonoBehaviour
 {
     public UIConditions uiCon;
-    Conditions hp { get { return uiCon.hp; } }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    Conditions Hp { get { return uiCon.hp; } }
 
     // Update is called once per frame
     void Update()
@@ -21,8 +15,8 @@ public class PlayerConditions : MonoBehaviour
             Debug.LogWarning("PlayerConditions: uiCon is NULL. 틱 데미지 미적용.");
             return;
         }
-        hp.Subtract(hp.tickDamage * Time.deltaTime);
-        if (hp.curValue <= 0f)
+        Hp.Subtract(Hp.tickDamage * Time.deltaTime);
+        if (Hp.curValue <= 0f)
         {
             Die();
         }
@@ -35,9 +29,11 @@ public class PlayerConditions : MonoBehaviour
 
     public void Heal(float amount)
     {
-        if (hp != null)
+        if (Hp != null)
         {
-            hp.Add(amount);
+            Hp.Add(amount);
         }
     }
+
+
 }

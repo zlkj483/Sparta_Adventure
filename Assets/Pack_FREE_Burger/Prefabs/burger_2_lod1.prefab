@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4070578010348942541}
   - component: {fileID: 5946831157439231664}
   - component: {fileID: 4792896356268254806}
-  - component: {fileID: 8203230028038149315}
+  - component: {fileID: 9161589731757410185}
   m_Layer: 6
   m_Name: burger_2_lod1
   m_TagString: Burger
@@ -148,7 +148,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8203230028038149315
+--- !u!114 &9161589731757410185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -13,7 +13,7 @@ public class ItemObject : MonoBehaviour, IInteractable
 
     public string GetInteractPrompt()
     {
-        string info = $"{data.itemName}. {data.description}";
+        string info = $"{data.itemName}\n {data.description}";
         return info ;
     }
 

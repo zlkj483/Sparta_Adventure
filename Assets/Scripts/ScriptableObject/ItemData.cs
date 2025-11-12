@@ -17,9 +17,9 @@ public class ItemData : ScriptableObject
     public ItemType type;
     public GameObject dropPrefab;
 
-    [Header("Stacking")]
+    /*[Header("Stacking")]
     public bool canStack;
     public int maxStack;
-
+    */
 
 }
