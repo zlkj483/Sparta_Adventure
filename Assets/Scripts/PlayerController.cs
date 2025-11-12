@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private float camCurYRot;
     public float lookSensitivitiy;
     private Vector2 mouseDelta;
+    public int jumpCount;
+    public int maxJumpCount;
      
 
     private Rigidbody rb;
@@ -27,16 +29,15 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   
     // Update is called once per frame
     void FixedUpdate()
     {
         Move();
+        if (IsGrounded())
+        {
+            jumpCount = 0;
+        }
     }
 
     private void LateUpdate()
@@ -83,32 +84,33 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if(context.phase == InputActionPhase.Started && IsGrounded())
+        //if(context.phase == InputActionPhase.Started && IsGrounded())
+        if (context.phase == InputActionPhase.Started && maxJumpCount > jumpCount)
         {
+            jumpCount++;
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            
         }
     }
 
     bool IsGrounded()
     {
-        //Vector3[] rays = new Vector3[4]
         Ray[] rays = new Ray[4]
         {
-           new Ray(transform.position + (transform.forward * 0.2f) + (transform.up * 0.01f),Vector3.down),
+            new Ray(transform.position + (transform.forward * 0.2f) + (transform.up * 0.01f), Vector3.down),
             new Ray(transform.position + (-transform.forward * 0.2f) + (transform.up * 0.01f), Vector3.down),
             new Ray(transform.position + (transform.right * 0.2f) + (transform.up * 0.01f), Vector3.down),
-            new Ray(transform.position + (-transform.right * 0.2f) + (transform.up * 0.01f), Vector3.down)
+            new Ray(transform.position + (-transform.right * 0.2f) +(transform.up * 0.01f), Vector3.down)
         };
-        //Vector3 dir = (Vector3.down + transform.forward * 0.15f).normalized;
 
         for (int i = 0; i < rays.Length; i++)
         {
-            
-            if (Physics.Raycast(rays[i], 1.2f, groundLayerMask))
+            if (Physics.Raycast(rays[i], 0.1f, groundLayerMask))
             {
                 return true;
             }
         }
+
         return false;
     }
 }
