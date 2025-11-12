@@ -647,6 +647,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2967352937804560622, guid: 8f7bdea12e5276e429a42d1c88f2558e, type: 3}
   m_PrefabInstance: {fileID: 33724282}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &33779072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 33779073}
+  - component: {fileID: 33779075}
+  - component: {fileID: 33779074}
+  m_Layer: 0
+  m_Name: Padcollider_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &33779073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33779072}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000017881389, y: -0.3900843, z: -0, w: 0.9207791}
+  m_LocalPosition: {x: 2.02, y: 0.79, z: -2.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8282529713360890116}
+  m_LocalEulerAnglesHint: {x: 0, y: -45.92, z: 0}
+--- !u!114 &33779074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33779072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0259bb5dd847584382fb277b0ba79c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPadForce: 170
+--- !u!65 &33779075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33779072}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.63, z: 2.89}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &38388614 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5768371717191585642, guid: 65e05b29ca383534c834c6e265c49c94, type: 3}
@@ -1125,9 +1192,10 @@ GameObject:
   m_Component:
   - component: {fileID: 68191909}
   - component: {fileID: 68191910}
+  - component: {fileID: 68191911}
   m_Layer: 0
   m_Name: PadCollider
-  m_TagString: Untagged
+  m_TagString: JumpPad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1168,6 +1236,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &68191911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68191908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0259bb5dd847584382fb277b0ba79c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPadForce: 170
 --- !u!1001 &69992202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7267,7 +7348,7 @@ MonoBehaviour:
   maxXLook: 85
   lookSensitivitiy: 0.1
   jumpCount: 0
-  maxJumpCount: 2
+  maxJumpCount: 1
 --- !u!114 &522107755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16144,6 +16225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1890650346}
     m_Modifications:
+    - target: {fileID: 1625643289498714813, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_TagString
+      value: JumpPad
+      objectReference: {fileID: 0}
     - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -16204,8 +16289,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: TableFan_withParticles (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240222, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_TagString
+      value: JumpPad
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092799764436704868, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_TagString
+      value: JumpPad
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1625643289498714813, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
       insertIndex: -1
@@ -27878,7 +27972,7 @@ GameObject:
   - component: {fileID: 1890650346}
   m_Layer: 0
   m_Name: JumpPad
-  m_TagString: Untagged
+  m_TagString: JumpPad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31533,6 +31627,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1890650346}
     m_Modifications:
+    - target: {fileID: 1625643289498714813, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_TagString
+      value: JumpPad
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240220, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: _windDust
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240220, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: _windSwirl
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240220, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: _windDistortionRenderer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -31581,9 +31691,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: TableFan_withParticles
       objectReference: {fileID: 0}
+    - target: {fileID: 8282529713625240222, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_TagString
+      value: JumpPad
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092799764436704868, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      propertyPath: m_TagString
+      value: JumpPad
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1625643289498714813, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8282529713625240221, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 33779073}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaa398f20ef8ed5429b6b93cb3b07a6c, type: 3}
 --- !u!4 &8282529713360890116 stripped
