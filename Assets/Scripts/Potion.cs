@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Potion : MonoBehaviour
 {
     public float healAmount = 30f;
     public float resTime = 20f;
