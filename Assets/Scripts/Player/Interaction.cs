@@ -15,13 +15,6 @@ public class Interaction : MonoBehaviour
     //public GameObject potionInfoUI;
     public TextMeshProUGUI promptText;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         CheckForItem();
@@ -73,10 +66,5 @@ public class Interaction : MonoBehaviour
             // BoxCast는 성공했으나 IInteractable이 없는 경우
             promptText.gameObject.SetActive(false);
         }
-    }
-
-    private void EatBurger()
-    {
-        
     }
 }

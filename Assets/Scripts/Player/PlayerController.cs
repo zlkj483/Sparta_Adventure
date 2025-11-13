@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     private Vector2 curMovementInput;
     public LayerMask groundLayerMask;
+    public int jumpCount;
+    public int maxJumpCount;
 
     [Header("Look")]
     public Transform cameraContainer;
@@ -19,8 +21,7 @@ public class PlayerController : MonoBehaviour
     private float camCurYRot;
     public float lookSensitivitiy;
     private Vector2 mouseDelta;
-    public int jumpCount;
-    public int maxJumpCount;
+
      
 
     private Rigidbody rb;
